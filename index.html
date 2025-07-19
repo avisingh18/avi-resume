@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Avi Resume</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Poppins', sans-serif;
+      overflow-x: hidden;
+    }
+
+    /* Space video background */
+    .video-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    .resume-container {
+      max-width: 1000px;
+      margin: 40px auto;
+      background: rgba(255, 255, 255, 0.92);
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 20px;
+      margin-bottom: 30px;
+    }
+
+    .intro-text {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .intro-text h2 {
+      color: #e74c3c;
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .intro-text p {
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    .profile-photo {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .profile-photo img {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      border: 3px solid #3498db;
+      object-fit: cover;
+    }
+
+    h2.section-title {
+      color: #3498db;
+      font-size: 20px;
+      margin-bottom: 15px;
+      border-left: 4px solid #e74c3c;
+      padding-left: 10px;
+    }
+
+    a {
+      color: #3498db;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+      font-size: 15px;
+    }
+
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #3498db;
+      color: white;
+    }
+
+    p {
+      margin: 10px 0;
+      font-size: 15px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+      font-size: 15px;
+    }
+
+    hr {
+      border: none;
+      border-top: 2px solid #ddd;
+      margin: 30px 0;
+    }
+
+    @media screen and (max-width: 768px) {
+      body {
+        padding: 10px;
+      }
+
+      .resume-container {
+        padding: 15px;
+        margin: 20px 10px;
+      }
+
+      .header {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+      }
+
+      .intro-text h2 {
+        font-size: 20px;
+      }
+
+      .intro-text p, table, ul li {
+        font-size: 14px;
+      }
+
+      .profile-photo {
+        margin-bottom: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ✅ Background video -->
+  <video autoplay muted loop class="video-bg">
+    <source src="https://cdn.coverr.co/videos/coverr-planet-earth-and-stars-5877/1080p.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="resume-container">
+    <div class="header">
+      <div class="intro-text">
+        <h2>Basic Introduction</h2>
+        <p>
+          <strong>Name:</strong> Abhishek Patel <br>
+          <strong>Father's Name:</strong> # <br>
+          <strong>Mother's Name:</strong> # <br>
+          <strong>Address:</strong> <a target="_blank" href="https://www.bing.com/maps?q=25.295795%2C+84.919762&FORM=HDRSC6&cp=25.295787%7E84.919767&lvl=16.0">
+            Samastichak, Bhagwanganj, Patna, 804454
+          </a>
+        </p>
+      </div>
+      <div class="profile-photo">
+        <img src="https://avatars.githubusercontent.com/u/211954556?v=4" alt="My Photo" />
+      </div>
+    </div>
+
+    <h2 class="section-title">Contact Details / Social Media Links</h2>
+    <p>
+      <strong>Phone:</strong> <a href="tel:+918292986595">+91 8292986595</a><br>
+      <strong>Email:</strong> <a target="_blank" href="mailto:abhishekpatel706170@outlook.com">abhishekpatel706170@outlook.com</a><br>
+      <strong>Instagram:</strong> <a target="_blank" href="https://www.instagram.com/direct/t/17844823950218080/">x_blaze_18</a><br>
+      <strong>LinkedIn:</strong> <em>Coming soon</em>
+    </p>
+
+    <hr>
+
+    <h2 class="section-title">Qualifications</h2>
+
+    <table>
+      <tr>
+        <th>School/College</th>
+        <th>Class</th>
+        <th>Board</th>
+        <th>Stream</th>
+        <th>Full Marks</th>
+        <th>Obt. Marks</th>
+      </tr>
+      <tr>
+        <td>Gov. School</td>
+        <td>X</td>
+        <td>B.S.E.B</td>
+        <td>Science</td>
+        <td>500</td>
+        <td><a target="_blank" href="https://drive.google.com/file/d/1dsGjmMrNuvnWQudriHnJBQiKJxRMZp44/view?usp=drive_link">387</a></td>
+      </tr>
+      <tr>
+        <td>S.M.D. College, Punpun</td>
+        <td>XII</td>
+        <td>B.S.E.B</td>
+        <td>Science</td>
+        <td>500</td>
+        <td><a target="_blank" href="https://drive.google.com/file/d/1fGwfrVlJzJKt1cAJHZp-Th_IGm5AzqT_/view?usp=drive_link">349</a></td>
+      </tr>
+      <tr>
+        <td>S.M.D. College, Punpun</td>
+        <td>B.C.A</td>
+        <td>Patliputra University</td>
+        <td>B.C.A</td>
+        <td>*</td>
+        <td><a target="_blank" href="https://drive.google.com/file/d/1e986GKrhdTlBNox2N-jAITk4JS14EA8z/view?usp=drive_link">*</a></td>
+      </tr>
+      <tr>
+        <td>T.C.C.</td>
+        <td>A.D.C.A</td>
+        <td>Arabhatt Knowledge University</td>
+        <td>Computer Application</td>
+        <td>100</td>
+        <td><a target="_blank" href="https://drive.google.com/file/d/1VvWtf5MUeHU4SUumCRKPRYYmMlJSg7GH/view?usp=drive_link">95</a></td>
+      </tr>
+    </table>
+
+    <hr>
+
+    <h2 class="section-title">Some Special Points</h2>
+    <ul>
+      <li><strong>Quick Learner:</strong> Adapts to new tech & environments efficiently.</li>
+      <li><strong>Problem-Solving:</strong> Enjoys solving real-world problems with C, C++, Java.</li>
+      <li><strong>Strong Programming Base:</strong> Solid grasp of core coding concepts.</li>
+      <li><strong>Web Development:</strong> HTML + UI/UX interest.</li>
+      <li><strong>Teamwork:</strong> Works well in group projects.</li>
+      <li><strong>Self-Discipline:</strong> Manages time and goals independently.</li>
+      <li><strong>Communication:</strong> Explains technical things clearly.</li>
+      <li><strong>Continuous Learner:</strong> Always learning new tools & tech.</li>
+    </ul>
+  </div>
+</body>
+</html>
